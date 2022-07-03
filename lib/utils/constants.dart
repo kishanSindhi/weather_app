@@ -13,7 +13,7 @@ const TextStyle kCityStyle = TextStyle(
 
 const TextStyle kTemperatureTextStyle = TextStyle(
   fontWeight: FontWeight.w800,
-  fontSize: 130,
+  fontSize: 100,
 );
 
 const TextStyle kConditionCity = TextStyle(
@@ -22,6 +22,23 @@ const TextStyle kConditionCity = TextStyle(
 );
 
 const TextStyle kMessageStyle = TextStyle(
-  fontSize: 40,
+  fontSize: 60,
   fontWeight: FontWeight.w400,
+);
+
+const InputDecoration kTextInputFieldDecoration = InputDecoration(
+  filled: true,
+  fillColor: Colors.white,
+  icon: Icon(
+    Icons.location_city,
+    color: Colors.white,
+  ),
+  hintText: "Enter city name",
+  hintStyle: TextStyle(color: Colors.grey),
+  border: OutlineInputBorder(
+    borderSide: BorderSide.none,
+    borderRadius: BorderRadius.all(
+      Radius.circular(10.0),
+    ),
+  ),
 );
